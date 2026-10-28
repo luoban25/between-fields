@@ -2,7 +2,7 @@
 
 四幅会流动的俯视风景。以原比例绘画地景为底，叠加飞机、独立云影、水面与动物动画；穿云场景使用保存密度和速度状态的 GPU 尾流。
 
-**[下载四景完整版](https://github.com/luoban25/between-fields/releases/latest)** · [版本记录](CHANGELOG.md) · [素材处理记录](docs/islands-asset-v23.md)
+**[在线预览](https://luoban25.github.io/between-fields/#islands)** · **[下载四景完整版](https://github.com/luoban25/between-fields/releases/latest)** · [版本记录](CHANGELOG.md) · [素材处理记录](docs/islands-asset-v23.md)
 
 ![风过浅湾 · 碧海沙洲](docs/previews/islands.png)
 
@@ -16,6 +16,12 @@
 | 碧海沙洲 | 棕榈、沙洲和蓝绿海水；水域光斑、反光、岸边白浪与穿云尾流。 |
 
 页面使用纯白背景、不规则颗粒方框和中文介绍。顶部按钮切换作品，每次只运行当前场景。
+
+## 在线预览
+
+直接打开 **https://luoban25.github.io/between-fields/**，默认显示碧海沙洲，顶部可切换四幅作品，无需下载或登录。
+
+网站由GitHub Pages托管，发布内容来自`dist/`，使用`gh-pages`分支。修改场景源码后需要同步更新发布分支。
 
 ## 最快打开
 
