@@ -1,0 +1,36 @@
+:root{color-scheme:light;background:#fff;font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#fff}body{min-height:100svh}main{min-height:100svh;display:grid;place-items:center;background:#fff;padding:44px 22px 38px}.scene-figure{width:min(70vw,600px,calc(100svh - 320px));margin:0;text-align:center}#stage{width:100%;aspect-ratio:1;background:#fff}#scene{display:block;width:100%;height:100%;touch-action:pan-y;outline:none}#scene:focus-visible{outline:1px solid #c9d3bf;outline-offset:8px}figcaption{padding-top:28px;color:#444b43}figcaption h1{font-family:"Songti SC","STSong","SimSun",serif;font-weight:400;font-size:22px;line-height:1.6;letter-spacing:3px;margin:0;text-wrap:balance}figcaption p{font-size:12px;font-weight:400;line-height:1.9;letter-spacing:1.2px;color:#777e75;margin:8px 0 0;text-wrap:pretty}figcaption span{display:block;font-size:10px;line-height:1.8;letter-spacing:1.8px;color:#9aa194;margin-top:13px}#status{position:fixed;bottom:16px;left:20px;right:20px;margin:0;text-align:center;color:#555;font-size:12px;line-height:1.5}#status:empty{display:none}@media(max-width:600px){main{padding:38px 16px}.scene-figure{width:min(82vw,520px);max-width:100%}figcaption{padding-top:25px}figcaption h1{font-size:20px;letter-spacing:2px}figcaption p{font-size:11px;letter-spacing:.5px}figcaption span{font-size:9px;margin-top:12px}}@media(max-height:600px) and (min-width:601px){main{padding:24px}.scene-figure{width:min(60vh,560px)}figcaption{padding-top:16px}figcaption h1{font-size:18px}figcaption span{margin-top:7px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+/* Room for the switcher above a moderately larger square scene. */
+main{padding:64px 22px 24px}.scene-figure{width:min(76vw,700px,calc(100svh - 260px))}
+@media(max-width:600px){main{padding:64px 16px 28px}.scene-figure{width:min(90vw,560px)}}
+.wake-controls{margin:22px auto 0;width:min(100%,460px);color:#51594f;text-align:left;font-size:12px;line-height:1.6;letter-spacing:.2px}
+.wake-controls summary{width:max-content;min-height:44px;margin:0 auto;padding:12px 10px;cursor:pointer;user-select:none;color:#596052;font-size:11px;letter-spacing:1.5px}
+.wake-controls summary::marker{color:#858e7d;font-size:10px}
+.wake-controls-body{border-top:1px solid #e6e9e2;padding:13px 2px 0}
+.wake-hint{margin:0 0 14px;color:#70786b;font-size:11px;line-height:1.9;text-wrap:pretty}
+.wake-actions{display:flex;gap:8px;margin-bottom:17px}
+.wake-controls button,.wake-controls select{font:inherit;color:#46503f;background:#fff;border:1px solid #d6dcd0;border-radius:5px;min-height:36px;padding:6px 13px}
+.wake-controls button{cursor:pointer}
+.wake-controls button:hover{background:#f6f8f3;border-color:#adb9a3}
+.wake-controls :is(summary,button,input,select):focus-visible{outline:2px solid #738568;outline-offset:4px}
+.wake-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px 24px}
+.wake-field{display:grid;grid-template-columns:1fr auto;align-items:center;column-gap:8px}
+.wake-field label{font-size:11px;color:#58614f}
+.wake-field output{font-size:10px;font-variant-numeric:tabular-nums;color:#68735f}
+.wake-field input{grid-column:1/-1;width:100%;min-height:28px;margin:0;accent-color:#78886a;cursor:pointer}
+.wake-view{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:15px}
+.wake-view label{font-size:11px}
+.wake-view select{width:150px;font-size:11px}
+@media(max-width:600px){.wake-controls{margin-top:16px}.wake-fields{column-gap:18px}.wake-controls button,.wake-controls select{min-height:44px}.wake-field input{min-height:36px}}
+
+/* Keep controls in the far-left whitespace on wide screens. */
+.wake-controls{margin-left:0;margin-right:auto}
+.wake-controls summary{margin-left:0;margin-right:auto}
+@media(min-width:1280px){
+ .scene-figure{padding-bottom:66px}
+ .wake-controls{position:fixed;z-index:2;left:24px;top:128px;width:212px;max-height:calc(100svh - 160px);overflow-y:auto;margin:0}
+ .wake-fields{grid-template-columns:1fr}
+ .wake-view{flex-direction:column;align-items:stretch;gap:6px}
+ .wake-view select{width:100%}
+}
+

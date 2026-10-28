@@ -1,0 +1,25 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff"><meta name="description" content="沙洲蜿蜒，碧海澄澈。飞机掠过海岛与棕榈，海水、云影和穿云尾流缓缓流动。">
+<title>风过浅湾 · 海岛漫游</title><link rel="icon" href="data:,"><link rel="stylesheet" href="./style.css?v=24">
+</head><body><main><figure class="scene-figure">
+<div id="stage" aria-label="风过浅湾穿云实验" aria-busy="true"><canvas id="scene" role="img" tabindex="0" aria-label="不规则颗粒方框内，碧绿海岛、象牙色沙洲与蓝色水道保持原比例。海水光斑、岸边白浪独立流动；飞机拨开白云，留下一对持续翻卷、扩散的尾流，飞机影子落在云面，云影掠过海面。聚焦后按空格暂停或继续，下方可展开气流参数。"></canvas></div>
+<figcaption><h1>风过浅湾</h1><p>潮汐勾勒沙洲，海风掠过浅蓝。<br>把片刻晴朗，留在岛屿之间。</p><span>碧海沙洲 · 低空漫游</span></figcaption>
+<details class="wake-controls" id="wake-controls">
+<summary>气流实验</summary>
+<div class="wake-controls-body">
+<p class="wake-hint" id="wake-hint">留意飞机身后：离开云层后，卷起的云雾仍会缓缓流动。</p>
+<div class="wake-actions"><button type="button" id="wake-pause" aria-pressed="false">暂停</button><button type="button" id="wake-replay">重新飞越</button></div>
+<div class="wake-fields">
+<div class="wake-field"><label for="wake-speed">飞行速度</label><output for="wake-speed" id="wake-speed-value">1.00 倍</output><input id="wake-speed" name="speed" type="range" min="0.5" max="1.8" step="0.05" value="1"></div>
+<div class="wake-field"><label for="wake-strength">尾涡强度</label><output for="wake-strength" id="wake-strength-value">1.25 倍</output><input id="wake-strength" name="strength" type="range" min="0.3" max="2" step="0.05" value="1.25"></div>
+<div class="wake-field"><label for="wake-density">云层浓度</label><output for="wake-density" id="wake-density-value">1.00 倍</output><input id="wake-density" name="density" type="range" min="0.5" max="1.6" step="0.05" value="1"></div>
+<div class="wake-field"><label for="wake-wind">环境风速</label><output for="wake-wind" id="wake-wind-value">0.70 倍</output><input id="wake-wind" name="wind" type="range" min="0.3" max="1.6" step="0.05" value="0.7"></div>
+<div class="wake-field"><label for="wake-lifetime">尾迹持续</label><output for="wake-lifetime" id="wake-lifetime-value">16 秒</output><input id="wake-lifetime" name="lifetime" type="range" min="6" max="24" step="1" value="16"></div>
+<div class="wake-field"><label for="wake-decay">扰动衰减</label><output for="wake-decay" id="wake-decay-value">0.07</output><input id="wake-decay" name="decay" type="range" min="0.02" max="0.22" step="0.01" value="0.07"></div>
+</div>
+<div class="wake-view"><label for="wake-debug">观察模式</label><select id="wake-debug" name="debug"><option value="final">完整画面</option><option value="density">云体密度</option><option value="velocity">空气流向</option><option value="wake">尾涡范围</option></select></div>
+</div></details>
+</figure><p id="status" role="alert"></p></main><script type="module" src="./main.js?v=23"></script></body></html>
+
+

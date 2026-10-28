@@ -1,0 +1,41 @@
+[
+  {
+    "name": "boat",
+    "width": 1024,
+    "height": 1536,
+    "alpha128BboxApprox": [
+      336,
+      156,
+      352,
+      1140
+    ],
+    "bowOrFront": "up",
+    "transparent": true
+  },
+  {
+    "name": "cloud",
+    "width": 1536,
+    "height": 1024,
+    "alpha128BboxApprox": [
+      84,
+      76,
+      1372,
+      904
+    ],
+    "bowOrFront": "up",
+    "transparent": true
+  },
+  {
+    "name": "car",
+    "width": 864,
+    "height": 1821,
+    "alpha128BboxApprox": [
+      104,
+      252,
+      660,
+      1304
+    ],
+    "bowOrFront": "up",
+    "transparent": true
+  }
+]

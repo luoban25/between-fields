@@ -1,0 +1,12 @@
+node_modules/
+artifacts/
+.sites/
+.openai/
+.env
+.env.*
+!.env.example
+*.zip
+*.tar.gz
+dist/flow-check.html
+dist/__offline-*-check.html
+/delivery/*.html

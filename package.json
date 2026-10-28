@@ -1,0 +1,33 @@
+{
+  "name": "between-the-fields",
+  "version": "24.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "check": "node --check dist/gallery.js && node --check dist/main.js && node --check dist/pasture-effects.js && node --check dist/clouds.js && node --check dist/flight-motion.js && node --check dist/frame.js && node --check dist/animal-layout.js && node --check dist/cyclist.js && node --check dist/road-path.js && node --check dist/road-data.js && node --check dist/river-geometry.js && node --check dist/river-data.js && node --check dist/works/pasture/main.js && node --check dist/works/wilderness/main.js && node --check dist/works/wilderness/road-path.js && node --check dist/works/wilderness/rover.js && node --check dist/works/wilderness/cloud-volume.js && node --check dist/works/wilderness/cloud-wake.js && node --check dist/works/wilderness/wake-simulation.js && node --check dist/works/wilderness/controls.js && node --check dist/vendor/ImprovedNoise.js && node --check dist/works/islands/main.js && node --check dist/works/islands/sea.js",
+    "build:offline": "node tools/build-offline.mjs ./node_modules/esbuild/lib/main.js",
+    "check:offline": "node tools/inspect-offline.mjs"
+  },
+  "description": "田野之间：四景 2.5D 动态风景集，包含 GPU 体积云、持续穿云尾流和离线 HTML。",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luoban25/between-fields.git"
+  },
+  "homepage": "https://github.com/luoban25/between-fields#readme",
+  "bugs": {
+    "url": "https://github.com/luoban25/between-fields/issues"
+  },
+  "author": "luoban25",
+  "keywords": [
+    "threejs",
+    "webgl2",
+    "glsl",
+    "volumetric-clouds",
+    "wake-vortices",
+    "interactive-landscape"
+  ],
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

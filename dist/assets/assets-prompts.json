@@ -1,0 +1,18 @@
+{
+  "mode": "built-in image_gen",
+  "reference": "reference/439adf0f-34f4-448c-bf2a-788b9f2f54d9.png",
+  "assets": [
+    {
+      "name": "boat",
+      "prompt": "Use case: background-extraction. Asset type: transparent PNG game sprite for a layered interactive scene. Input Image 1 is visual reference for the small motorboat in the vertical turquoise canal. Produce ONLY ONE isolated complete narrow white motorboat, seen directly from above (orthographic top down), bow pointing exactly to the TOP of the image. Match the reference's charming finely textured miniature painterly 3D rendering: white slender hull, reddish terracotta-brown seating and inner deck, a few small cream seats, crisp fine light edges, subtle material shading. Make the boat long and narrow, about 3.5 times as long as wide. The entire boat fits fully within canvas, centered with transparent padding. True transparent background including all surrounding pixels. No water, no wake, no cast shadow, no shoreline, no text, no frame, no other objects. Match source style; no sticker outline. Sun lighting from upper left with contained self shading only."
+    },
+    {
+      "name": "cloud",
+      "prompt": "Use case: background-extraction. Asset type: transparent PNG game cloud sprite for a layered miniature scene. Input Image 1 is the style reference: extract/recreate ONE full puffy white cloud like the cloud over the right-side tulip field, isolated and seen directly from above. Soft clustered lobes with gentle dimensional volume, softly textured white upper highlights and subtle pale blue-gray recesses under the lobes. Match this illustrated miniature landscape aesthetic, with a natural softly feathered alpha outline and some fine wispy fluff. Wider than tall, a cohesive irregular cloud cluster, fully visible centered with padding. True transparent background, no colored background. NO ground shadow, no landscape, no water, no boat, no text, no frame, no fog rectangle. Do not make a flat cartoon icon or photoreal storm cloud. White sunlight top-left, restrained pale blue-gray shading bottom-right."
+    },
+    {
+      "name": "car",
+      "prompt": "Use case: background-extraction. Asset type: transparent PNG vehicle game sprite. Input Image 1 is style and object reference: recreate ONLY the little white car on the left tan road as one complete isolated car, orthographic directly top down, front pointing exactly toward the TOP of the image. White compact hatchback body, pale blue-gray front and rear windows, subtle finely textured miniature 3D painterly finish, tiny dark side mirrors, wheels very subtly visible at sides, roof and panels readable at a tiny scale. Keep the compact car narrow, about 2.1 times as long as wide. Fully centered and complete with transparent padding. Actual transparent background everywhere around car. No road, no ground, no lane marks, no cast shadow, no glow, no text, no frame, no other objects. Match reference sunlit styling and crisp silhouette; no sticker border."
+    }
+  ]
+}

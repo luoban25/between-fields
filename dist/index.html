@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+ <meta name="theme-color" content="#ffffff">
+ <meta name="description" content="在草原河流、蓝金田野、赤土荒野与碧海沙洲之间切换，慢慢欣赏会流动的风景。">
+ <title>田野之间 · 风景集</title>
+ <link rel="icon" href="data:,">
+ <link rel="stylesheet" href="./gallery.css">
+</head>
+<body>
+ <h1 class="visually-hidden">田野之间 · 风景集</h1>
+ <nav class="work-switch" aria-label="切换风景作品">
+  <button type="button" data-work="pasture" aria-pressed="false">草原河流</button>
+  <button type="button" data-work="patchwork" aria-pressed="false">蓝金田野</button>
+  <button type="button" data-work="wilderness" aria-pressed="false">赤土荒野</button>
+  <button type="button" data-work="islands" aria-pressed="true">碧海沙洲</button>
+ </nav>
+ <iframe id="work" class="work-frame" title="碧海沙洲动态场景" allow="fullscreen"></iframe>
+ <script src="./gallery.js?v=23"></script>
+</body>
+</html>
